@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+ul {
+    list-style: none;
+}
+body {
+    background-image: url(./01imgs/img/BG.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    
+}
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+header{
+    margin-top: 32px;
+    height: calc(120px + 32px);
+    
+}
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .5s;
+}
+header div:hover{
+    transform: scale(1.1);
+}
+header div img{
+    width: 100%;
+    border: 1px solid #443e44;
+    border-radius: 50%;
+    
+}
+
+main {
+        max-width: 580px;
+        width: 90%;
+        margin: 32px auto;
+        /*display: flex;
+        flex-direction: column;
+        gap: 24px;*/
+        display: grid;
+        gap: 24px;
+
+    }
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+section ul{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+
+}
+section ul li {
+    transition: transform 0.30s;
+}
+section ul li:hover {
+    transform: scale(1.3);
+}
+
+select h2{
+    letter-spacing: -0.47px;
+}
+section p {
+    color: #a1a1aa;
+    letter-spacing: -0.18px;
+}
+
+.game-list img{
+    width: 90px;
+    border-radius: 8px;
+}
+.stremers-list img{
+    border: 1px solid #443e44;
+    border-radius: 50%;
+
+}
+/*animações*/
+header div {
+    animation: DescePraBaixo .7s .2s backwards;
+}
+@keyframes DescePraBaixo {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+main section{
+    animation: AnimacoesDosCards .7s backwards;
+}
+@keyframes AnimacoesDosCards {
+    from{
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+main section:nth-child(1) {
+    animation-delay: .2s;
+}
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
