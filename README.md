@@ -18,4 +18,4 @@ trilha Explores
 
 ## CONTATO 
 
-leozinhosaraiva@gmail.com
+leonardonehara@gmail.com
